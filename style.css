@@ -26,10 +26,10 @@ a:hover { color: var(--blue-dark); text-decoration: underline; text-underline-of
 a:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; border-radius: 2px; }
 p { margin: 0 0 17px; }
 h1, h2, h3, h4 { margin: 0; color: var(--heading); }
-.skip-link { position: absolute; left: 20px; top: -90px; z-index: 10; padding: 8px 15px; background: #fff; border: 1px solid var(--blue); }
+.skip-link { position: absolute; left: 20px; top: -90px; z-index: 30; padding: 8px 15px; background: #fff; border: 1px solid var(--blue); }
 .skip-link:focus { top: 12px; }
 
-.site-header { border-top: 4px solid #1c4571; border-bottom: 1px solid var(--border); background: #fff; }
+.site-header { position: sticky; top: 0; z-index: 20; border-top: 4px solid #1c4571; border-bottom: 1px solid var(--border); background: #fff; }
 .header-inner { max-width: 1080px; margin: auto; min-height: 75px; padding: 15px 30px; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
 .site-name { color: var(--heading); font-size: 17px; font-weight: 650; letter-spacing: .01em; }
 nav { display: flex; flex-wrap: wrap; gap: 26px; }
@@ -37,7 +37,7 @@ nav a { color: var(--muted); font-size: 14px; }
 nav a:hover { color: var(--blue); }
 
 .page-layout { max-width: 1080px; margin: 0 auto; padding: 66px 30px 55px; display: grid; grid-template-columns: 245px minmax(0, 1fr); gap: 70px; align-items: start; }
-.profile { position: sticky; top: 35px; }
+.profile { position: sticky; top: 96px; }
 .profile-rule { width: 36px; height: 3px; margin-bottom: 21px; background: var(--blue); }
 .profile h1 { font-family: Georgia, "Times New Roman", serif; font-size: 38px; font-weight: 500; line-height: 1.18; letter-spacing: -.045em; }
 .chinese-name { margin: 7px 0 27px; color: var(--muted); font-size: 19px; letter-spacing: .19em; }
@@ -107,7 +107,7 @@ sup { font-size: .7em; line-height: 0; vertical-align: super; }
   .site-footer { margin-inline: 30px; }
 }
 @media (max-width: 680px) {
-  html { scroll-padding-top: 20px; }
+  html { scroll-padding-top: 110px; }
   .header-inner { padding: 16px 24px; min-height: 0; flex-wrap: wrap; gap: 8px 20px; }
   .site-name { font-size: 15px; }
   nav { gap: 15px; }
