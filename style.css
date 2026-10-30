@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Yiming Name Serif";
+  src: url("assets/fonts/yiming-name-serif.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+4E00, U+9AD8, U+9E23;
+}
+
 :root {
   color-scheme: light;
   --text: #252d38;
@@ -40,7 +49,7 @@ nav a:hover { color: var(--blue); }
 .profile { position: sticky; top: 96px; }
 .profile-rule { width: 36px; height: 3px; margin-bottom: 21px; background: var(--blue); }
 .profile h1 { font-family: Georgia, "Times New Roman", serif; font-size: 38px; font-weight: 500; line-height: 1.18; letter-spacing: -.045em; }
-.chinese-name { margin: 7px 0 27px; color: var(--muted); font-size: 19px; letter-spacing: .19em; }
+.chinese-name { margin: 7px 0 27px; font-family: "Yiming Name Serif", "Noto Serif SC", "Songti SC", SimSun, serif; color: #4a5565; font-size: 38px; font-weight: 400; line-height: 1.25; letter-spacing: 1px; font-synthesis: none; }
 .profile-role { margin-bottom: 14px; color: var(--heading); font-size: 16px; font-weight: 600; line-height: 1.6; }
 .profile-role span { display: block; }
 .profile-university { margin-bottom: 24px; color: var(--muted); font-size: 14px; line-height: 1.7; }
@@ -103,6 +112,7 @@ sup { font-size: .7em; line-height: 0; vertical-align: super; }
 @media (max-width: 900px) {
   .page-layout { grid-template-columns: 215px minmax(0, 1fr); gap: 35px; }
   .profile h1 { font-size: 33px; }
+  .chinese-name { font-size: 33px; }
   .desktop-break { display: none; }
   .site-footer { margin-inline: 30px; }
 }
@@ -116,7 +126,7 @@ sup { font-size: .7em; line-height: 0; vertical-align: super; }
   .profile { position: static; padding-bottom: 32px; margin-bottom: 33px; border-bottom: 1px solid var(--border); }
   .profile-rule { margin-bottom: 17px; }
   .profile h1 { font-size: 39px; }
-  .chinese-name { margin-bottom: 19px; font-size: 18px; }
+  .chinese-name { margin-bottom: 19px; font-size: 39px; }
   .profile-role span { display: inline; }
   .profile-role span + span::before { content: ' · '; }
   .profile-role { margin-bottom: 8px; }
